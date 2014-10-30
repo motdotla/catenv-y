@@ -2,7 +2,7 @@
 
 <img src="http://edgecats.net/" />
 
-Demo application for [JS.LA](http://js.la)'s October 2014 module of the month presentation.
+Demo application for [JS.LA](http://js.la)'s :yellow_heart: October 2014 module of the month presentation.
 
 ## Usage
 
