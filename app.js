@@ -54,8 +54,8 @@ server.route({
   handler: function (request, reply) {
     // send the email
     var mailOptions = {
-      from: 'Mot <mot@mot.la>',
-      to: 'mot@mot.la',
+      from: FROM,
+      to: TO,
       subject: '❤Catenv-y❤', 
       html: '<h2>❤Catenv-y❤</h2><br/><img src="http://edgecats.net/"/>'
     };
@@ -67,10 +67,9 @@ server.route({
       }
     });
 
-    var email = "mot@mot.la";
-    var gravatar_url = gravatar.url(email, {s: '200'}, https=false);
+    var gravatar_url = gravatar.url(TO, {s: '200'}, https=false);
 
-    reply.view('index', { email: email, gravatar_url: gravatar_url });
+    reply.view('index', { email: TO, gravatar_url: gravatar_url });
   }
 });
 
